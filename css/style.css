@@ -4,18 +4,14 @@ body{
   background-color: black;
   opacity: 0.9;
   color:seashell;
-
 }
 .flex-container {
     display: flex;
-    margin: 0 auto;
     flex-wrap: wrap;
-    width: 100%;
-
+    justify-content: center;
 }
 
 header {
-  align-items: center;
   border-bottom:1px solid seashell;
   height:69px;
   position: fixed;
@@ -23,16 +19,24 @@ header {
   justify-content: space-between;
   background-color: black;
   margin-top: 0px;
+  justify-content: space-between!important;
+  align-items: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 100%;
 }
 header img {
   height: 50px;
   padding-left: 10px;
 }
 nav span {
-  text-decoration: underline;
-  padding-right: 30px;
-  text-align: right;
-  flex-grow:1;
+      display: inline-block;
+      padding: 20px 10px;
+  }
+}
+nav {
+    text-align: right;
+    flex-grow: 1;
 }
 a:hover {
   color:seashell;
@@ -47,22 +51,58 @@ a:visited {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   height: 700px;
   width: 1200px;
-  display: flex;
+  padding-top:69px;
+
   align-items: center;
   text-align: center;
-  padding-top:69px;
-}
-.content {
-  background-color: black;
-  width: 100%;
-}
-#store {
-  display: flex;
-  width: 1000px;
+  margin:0 auto;
 
 }
-.items {
-  height: 200px;
-  padding-bottom: 10px;
+#our-mission .content {
+  background-color: black;
+  width: 100%;
+  margin:0 auto;
+}
+#store {
+    height: 700px;
+    width: 1000px;
+    margin:0 auto;
+    padding-top: 70px;
+    text-align: center;
+}
+.item img {
+    height: 200px;
+    margin: 10px;
+    display: block;
+}
+.item span {
+  font-weight: bold;
+  display: block;
+  padding: 5px;
+  text-align: center;
+}
+#locations {
+    width: 1200px;
+  height:500px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  opacity: 1;
+  text-align: center;
+  margin:0 auto;
+  padding-top: 70px;
+
+}
+
+.location {
   width: 300px;
+  background-color: black;
+  margin:15px 20px;
+}
+#contact-us {
+  height:200px;
+  text-align: center;
+  margin: 0 auto;
+}
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
